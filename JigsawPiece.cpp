@@ -77,7 +77,6 @@ void JigsawPiece::Generate(const Permutation& permutation)
 	}
 }
 
-
 // Generate the unit circle vertices for the bottom jigsaw end.
 void JigsawPiece::BuildEndVertices()
 {
