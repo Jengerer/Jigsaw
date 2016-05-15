@@ -128,7 +128,6 @@ void Mesh2::Triangulate()
 		std::tuple<float, TriangulateNode*> lowest = std::make_tuple(1.f, nullptr);
         for (U32 c = clipsRemaining; c != 0; --c, node = node->mNext) {
             if (CanRemoveEar(mPolygon, *node)) {
-                // If this triangle's smallest angle has a smaller cosine, take over.
                 const float currentMaximumCosine = GetMaximumCosine(mPolygon, *node);
                 if (currentMaximumCosine <= std::get<F32>(lowest)) {
 					lowest = std::make_tuple(currentMaximumCosine, node);

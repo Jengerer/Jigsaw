@@ -155,7 +155,6 @@
     <ClInclude Include="Mesh2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Common.cpp" />
     <ClCompile Include="JigsawPiece.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mesh3.cpp" />

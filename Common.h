@@ -93,7 +93,6 @@ namespace Math
 	static constexpr Vector3 Zero3(0.f);
 }
 
-
 // Unused variables macro.
 inline void Unused(...)
 {
