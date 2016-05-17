@@ -149,12 +149,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />
+    <ClInclude Include="JigsawMesh.h" />
     <ClInclude Include="JigsawPiece.h" />
     <ClInclude Include="Mesh3.h" />
     <ClInclude Include="Polygon2.h" />
     <ClInclude Include="Mesh2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="JigsawMesh.cpp" />
     <ClCompile Include="JigsawPiece.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mesh3.cpp" />

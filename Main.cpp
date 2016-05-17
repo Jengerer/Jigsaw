@@ -1,4 +1,5 @@
 #include "Common.h"
+#include "JigsawMesh.h"
 #include "JigsawPiece.h"
 #include <cassert>
 #include <cstdio>
@@ -8,12 +9,15 @@ int main(int argc, char* argv[])
 	Unused(argc, argv);
 
     // Generate end vertices.
-	JigsawPiece::BuildEndVertices();
+	JigsawMesh::BuildEndVertices();
+
+	// Generate all permutations.
+	JigsawPiece::GeneratePermutations();
 
 	// Build the mesh.
-	JigsawPiece piece;
-	const JigsawPiece::Permutation permutation = {
-		JigsawPiece::eOUTWARD, JigsawPiece::eOUTWARD, JigsawPiece::eINWARD, JigsawPiece::eINWARD
+	JigsawMesh piece;
+	const JigsawMesh::Permutation permutation = {
+		JigsawMesh::eOUTWARD, JigsawMesh::eOUTWARD, JigsawMesh::eINWARD, JigsawMesh::eINWARD
 	};
 	piece.Generate(permutation);
     system("pause");
